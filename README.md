@@ -25,6 +25,6 @@ npm start
 ### 3. Setup n8n Workflow
 - Add Webhook Node (POST /webhook)
 - Add Email Node (SendGrid or SMTP)
-- Use {{$json.name}}, {{$json.email}}, etc.
+- Use {{$json.body.name}}, {{$json.body.email}}, etc.
 - Activate the workflow
 - Replace webhook URL in backend/index.js with your actual n8n URL
